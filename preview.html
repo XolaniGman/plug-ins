@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image preview</title>
+    <link rel="alternate" href="atom.xml" type="application/atom+xml" title="Atom">
+</head>
+<body>
+    
+    <div class="section slider">
+        <!-- Created By CodingNepal -->
+        <html lang="en" dir="ltr">
+         
+            <div class="content">
+              <div class="images">
+                <img src="/c6.jpg">
+                <img src="/c7.jpg">
+                <img src="/n3.jpg">
+                <img src="/n6.jpg">
+                <img src="/nn1.jpg">
+              </div>
+        </div>
+        <script>
+              var indexValue = 0;
+              function slideShow(){
+                setTimeout(slideShow, 2500);
+                var x;
+                const img = document.querySelectorAll("img");
+                for(x = 0; x < img.length; x++){
+                  img[x].style.display = "none";
+                }
+                indexValue++;
+                if(indexValue > img.length){indexValue = 1}
+                img[indexValue -1].style.display = "block";
+              }
+              slideShow();
+            </script>
+        
+         
+        </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>

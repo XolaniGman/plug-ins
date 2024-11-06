@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>upload</title>
+    <!-- link css -->
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+
+
+        <!-- logo -->
+        <a href="#" class="logo">
+            <img src="img/a1.png" alt="">
+        </a>
+        <!-- logo -->
+    
+        <!--start Navbar -->
+        <ul class="navbar" id=" navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#porfolio">Portfolio</a></li>
+            <li><a href="#contacts">contact</a></li>
+        </ul>
+        <!-- end navbar -->
+    
+          <!-- start search box -->
+          <div class="search-box">
+            <input type="search" name="" id="" placeholder="Search Here...">
+        </div>
+        <!-- end search box -->
+    
+        <!--start Icon -->
+        <div class="header-icon">
+            <img src="img/icon2.png" alt="">
+            <img src="img/icon3.png" alt="">
+            <img src="img/icon5.png" alt="">
+            <img src="img/icon8.png" alt="">
+            
+        </div>
+         <!--end Icon --> 
+    
+        <!-- start menu icon -->
+        <div class="menu">
+            <img src="img/icon44.png" alt="" id="menu-icon" >
+        </div> 
+        
+    
+    
+    </header>
+<section class="upload">
+    <div class="attach">
+        <img src="clip-icon.webp" alt="" id="attach">
+    </div>
+    <div class="wrapper">
+        <header>file Uploader Javascrip</header>
+        <form action="#">
+            <input type="file" class="file-input" name="file" hidden>
+            <i class="fas fa-clound-upload-alt"></i>
+            <p>browse file to upload</p>
+        </form>
+        <section class="progress-area"></section>
+        <section class="uploaded-area"></section>
+    </div>
+    </section>
+
+<section class="preview">
+     <form action="">
+        <div class="image-preview">
+            <input type="file" name="choose-file" id="choose-file" accept="image/+"/>
+            <label for="choose-file">choose-file</label>
+        </div>
+    </form>
+    
+</section>
+   
+<div class="section-upload">
+    <div class="container">
+        <div class="card">
+        <h3>Upload Files</h3>
+        <div class="drop_box">
+        <header>
+        <h4>Select File here</h4>
+        </header>
+        <p>Files Supported: PDF, TEXT, DOC , DOCX</p>
+        <input type="file" hidden accept=".doc,.docx,.pdf" id="fileID" style="display:none;">
+        <button class="btn">Choose File</button>
+        </div>
+        </div>
+        
+</div>
+
+<div class="section slider">
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+ 
+    <div class="content">
+      <div class="images">
+        <img src="/c6.jpg">
+        <img src="/c7.jpg">
+        <img src="/n3.jpg">
+        <img src="/n6.jpg">
+        <img src="/nn1.jpg">
+        <img src="/nn1.jpg">
+      </div>
+</div>
+<script>
+      var indexValue = 0;
+      function slideShow(){
+        setTimeout(slideShow, 2500);
+        var x;
+        const img = document.querySelectorAll("img");
+        for(x = 0; x < img.length; x++){
+          img[x].style.display = "none";
+        }
+        indexValue++;
+        if(indexValue > img.length){indexValue = 1}
+        img[indexValue -1].style.display = "block";
+      }
+      slideShow();  
+    </script>
+
+ 
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<Section class="sddd">
+<div class="slideshow">
+    <div class="slides-container">
+      <div class="slides">
+        <img class="slide" src="c6.jpg" alt="">
+        <img class="slide" src="c7.jpg" alt="">
+        <img class="slide" src="n3.jpg" alt="">
+        <img class="slide" src="n6.jpg" alt="">
+        <img class="slide" src="nn1.jpg" alt="">
+      </div>
+    </div>
+    <div class="bullets">
+    </div>
+    <div class="buttons">
+      <button type="button" class="prev">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+        </svg>
+  
+      </button>
+      <button type="button" class="next">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+        </svg>
+      </button>
+    </div>
+  </div>
+  
+
+
+</Section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
